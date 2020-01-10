@@ -1,0 +1,66 @@
+<h2>Recherche</h2>
+<form action="post">
+    <div class="row">
+        <div class="form-group col-md-3">
+            <label for="searchText">Recherche</label>
+            <input type="text" class="form-control" id="searchText">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="searchDate">Année</label>
+            <select class="form-control" id="searchDate">
+                <option>2021</option>
+                <option selected>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="searchOrder">Trier par</label>
+            <select class="form-control" id="searchOrder">
+                <option value="" selected></option>
+                <option value="date_start">Date décroissante</option>
+                <option value="-date_start">Date croissante</option>
+                <option value="title">Titre</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="searchPage">Page</label>
+            <select class="form-control" id="searchPage">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" id="formSubmit">Submit</button>
+</form>
+
+<div id="results" class="row">
+</div>
+
+<p id="linkUp" class="mt-2" style="display:none">
+    <a href="#main-menu">Revenir en haut</a>
+</p>
+
+<template id="blockResults">
+    <div class="col-md-6 mt-4">
+        <div class="card" style="width: 100%;">
+            <a><img class="card-img-top" style="width: 100%;"></a>
+            <div class="card-body">
+                <h3 class="card-title"></h3>
+                <p class="card-text" style="max-width: 100%;"></p>
+            </div>
+        </div>
+    </div>
+</template>
